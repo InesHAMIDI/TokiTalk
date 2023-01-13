@@ -4,17 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="style/Style.css">
 <title>TokiTalk</title>
 </head>
 <body>
 	<div id="boutons-Prefaits">
-		<button id="oui" name="oui" action=POST>Oui</button>
-		<button id="non" name="non" action=POST>Non</button>
-		<button id="idk" name="idk" action=POST>Je ne sais pas</button>
-	</div>
-	<div id="champ-ecriture">
-		<input type="text" placeholder: "dadaoui" name="texte" id="texte">
+		<button id="oui" action="post">Oui</button>
 	</div>
 </body>
 </html>
