@@ -7,6 +7,6 @@
   {
     "name": "apiKey",
     "type": "java.lang.String",
-    "description": "A description for 'apiKey'"
+    "description": "RSS API key"
   }
 ]}
