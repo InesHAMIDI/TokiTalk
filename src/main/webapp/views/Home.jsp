@@ -1,10 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>TokiTalk</title>
+        <link href="<c:url value="/styles/main.css"/>" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="boutons-Prefaits">
@@ -14,5 +15,6 @@
 	</div>
 	<div id="champ-ecriture">
 		<input type="text" placeholder: "dadaoui" name="texte" id="texte">
-	</div></body>
+	</div>
+</body>
 </html>
