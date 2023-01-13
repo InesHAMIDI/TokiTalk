@@ -9,6 +9,11 @@
 <body>
 	<div id="boutons-Prefaits">
 		<button id="oui" action="post">Oui</button>
+		<button id="oui" name="oui" action=POST>Oui</button>
+		<button id="non" name="non" action=POST>Non</button>
+		<button id="idk" name="idk" action=POST>Je ne sais pas</button>
 	</div>
-</body>
+	<div id="champ-ecriture">
+		<input type="text" placeholder: "dadaoui" name="texte" id="texte">
+	</div></body>
 </html>
