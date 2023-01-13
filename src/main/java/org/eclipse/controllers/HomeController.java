@@ -1,26 +1,24 @@
 package org.eclipse.controllers;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import ch.qos.logback.core.model.Model;
 
 @Controller
 public class HomeController {
-	@Value("${apiKey}")
-	private String apiKey;
 	
+	private String adresse = "http://api.voicerss.org/?key=7752ff267a4547ba914bce6d0ff0a23f&hl=fr-fr&v=Iva&src=";
+
+
 	@GetMapping({"/tokitalk", "/"})
 	public String Home() {
 		return "Home";
 	}
 	
-	@GetMapping("/blabla")
-	public String TTS(@RequestParam(name="phrase") String phrase) {
-		return("http://api.voicerss.org/?key=" + apiKey + "&hl=fr-fr&v=Iva&src=" + phrase);
+	@GetMapping("/blabla/{phrase}")
+	public String TTS(@PathVariable String phrase) {
+		return(adresse + phrase);
 	}
 	
 	@PostMapping("Error")
