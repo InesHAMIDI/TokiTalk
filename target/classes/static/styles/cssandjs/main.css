@@ -1,0 +1,13 @@
+body{
+	display: flex;
+	flex-direction: row;
+	font-family: Arial;
+}
+
+#boutons-Prefaits:hover{
+	font-style: bold;
+}
+
+#boutons-Prefaits{
+	color: red;
+}
