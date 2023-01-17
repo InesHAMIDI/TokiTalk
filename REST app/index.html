@@ -12,17 +12,17 @@
     <i class="fa-solid fa-infinity fa-5x" id="logo"></i> 
 </header>
 <body>
-    <div>
-        <button id="b-oui" class="bouton-prefait" onclick="LireAudio()">Oui</button>
-        <button id="b-non" class="bouton-prefait" onclick="LireAudio()">Non</button>
-        <button id="b-jsp" class="bouton-prefait" onclick="LireAudio()">Je ne sais pas</button>
-    </div>
+    <div class="contenu">
+        <div>
+            <button id="b-oui" class="bouton-prefait" onclick="LireAudio()">Oui</button>
+            <button id="b-non" class="bouton-prefait" onclick="LireAudio()">Non</button>
+            <button id="b-jsp" class="bouton-prefait" onclick="LireAudio()">Je ne sais pas</button>
+        </div>
 
-    <div>
+    </div class="textEntree">
         <label for="texteALire">Entrez votre texte</label>
-    </div>
-    <div>
-        <textarea id="texteALire" maxlength="3000" placeholder="Dadaoui dadaoui"></textarea>
+        <textarea id="texteALire" maxlength="100" placeholder="Dadaoui dadaoui"></textarea>
+        <button id="b-valider" class="bouton-prefait" onclick="LireAudio()">Valider</button>
     </div>
 
     <script src="main.js"></script>
