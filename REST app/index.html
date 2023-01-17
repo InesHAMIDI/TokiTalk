@@ -14,15 +14,15 @@
 <body>
     <div class="contenu">
         <div>
-            <button id="b-oui" class="bouton-prefait" onclick="LireAudio()">Oui</button>
-            <button id="b-non" class="bouton-prefait" onclick="LireAudio()">Non</button>
-            <button id="b-jsp" class="bouton-prefait" onclick="LireAudio()">Je ne sais pas</button>
+            <button id="b-oui" class="bouton-prefait" onclick='LireAudio("oui")'>Oui</button>
+            <button id="b-non" class="bouton-prefait" onclick='LireAudio("non")'>Non</button>
+            <button id="b-jsp" class="bouton-prefait" onclick='LireAudio("je ne sais pas")'>Je ne sais pas</button>
         </div>
 
     </div class="textEntree">
         <label for="texteALire">Entrez votre texte</label>
         <textarea id="texteALire" maxlength="100" placeholder="Dadaoui dadaoui"></textarea>
-        <button id="b-valider" class="bouton-prefait" onclick="LireAudio()">Valider</button>
+        <button id="b-valider" class="bouton-prefait" onclick='LireAudio()'>Valider</button>
     </div>
 
     <script src="main.js"></script>
