@@ -8,19 +8,22 @@
     <link href="/main.css" rel="stylesheet" type="text/css">
     <title>TokiTalk</title>
 </head>
+<header>
+    <i class="fa-solid fa-infinity fa-5x" id="logo"></i> 
+</header>
 <body>
-    <div class="boutons-prefaits">
-        <button id="b-oui" onclick="LireAudio()">Oui</button>
-        <button id="b-non" onclick="LireAudio()">Non</button>
-        <button id="b-jsp" onclick="LireAudio()">Je ne sais pas</button>
+    <div>
+        <button id="b-oui" class="bouton-prefait" onclick="LireAudio()">Oui</button>
+        <button id="b-non" class="bouton-prefait" onclick="LireAudio()">Non</button>
+        <button id="b-jsp" class="bouton-prefait" onclick="LireAudio()">Je ne sais pas</button>
     </div>
-
 
     <div>
         <label for="texteALire">Entrez votre texte</label>
-        <textarea id="texteALire" maxlength="50" placeholder="Dadaoui dadaoui"></textarea>
     </div>
-    
+    <div>
+        <textarea id="texteALire" maxlength="3000" placeholder="Dadaoui dadaoui"></textarea>
+    </div>
 
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/59ea00ebc4.js" crossorigin="anonymous"></script>

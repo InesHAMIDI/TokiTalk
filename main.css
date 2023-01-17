@@ -1,15 +1,21 @@
+#logo{
+  color: #B3EFB2;
+}
 body{
-    font-family:'Courier New', Courier, monospace ;
-    background-color: #1c2541;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+    background-color: #31493C;
+    display: flex;
+    flex-direction: column;
+    color:#001A23;
 }
 
-#b-oui, #b-non, #b-jsp{
+.bouton-prefait{
       background-color: #e1ecf4;
       border-radius: 3px;
       border: 1px solid #7aa7c7;
       box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
       box-sizing: border-box;
-      color: #39739d;
+      color: #7A9E7E;
       cursor: pointer;
       display: inline-block;
       font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
@@ -29,18 +35,37 @@ body{
       white-space: nowrap;
     }
     
-    #b-oui:hover, #b-non:hover, #b-jsp:hover,
-    #b-oui:focus, #b-non:focus, #b-jsp:focus {
+    .bouton-prefait:hover,
+    .bouton-prefait:focus {
       background-color: #b3d3ea;
       color: #2c5777;
     }
     
-    #b-oui:focus, #b-non:focus, #b-jsp:focus {
+    .bouton-prefait:focus {
       box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
     }
     
-    #b-oui:active, #b-non:active, #b-jsp:active{
+    .bouton-prefait:active{
       background-color: #a0c7e4;
       box-shadow: none;
       color: #2c5777;
+    }
+
+    #texteALire{
+      background-color: #e1ecf4;
+      border-radius: 3px;
+      border: 1px solid #7aa7c7;
+      box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+      box-sizing: border-box;
+      color: #39739d;
+      font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.15385;
+      margin: 0;
+      outline: none;
+      padding: 8px .8em;
+      position: relative;
+      text-align: left;
+      
     }
