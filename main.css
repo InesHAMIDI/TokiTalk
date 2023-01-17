@@ -14,11 +14,6 @@ body{
     align-content: center;
 }
 
-.textEntree{
-  display: flex;
-  align-content: baseline;
-}
-
 .bouton-prefait{
       cursor: pointer;
       outline: none;
@@ -31,8 +26,7 @@ body{
       white-space: nowrap;
     }
     
-    .bouton-prefait:hover,
-    .bouton-prefait:focus {
+    .bouton-prefait:hover {
       background-color: #7A9E7E;
     }
       
