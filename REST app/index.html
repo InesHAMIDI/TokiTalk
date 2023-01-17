@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.svg" type="image/svg">  <!--favicon-->
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="/main.css" rel="stylesheet" type="text/css">
     <title>TokiTalk</title>
 </head>
 <body>
     <div class="boutons-prefaits">
-        <button onclick="LireAudio()">Oui</button>
-        <button onclick="LireAudio()">Non</button>
-        <button onclick="LireAudio()">Je ne sais pas</button>
+        <button id="b-oui" onclick="LireAudio()">Oui</button>
+        <button id="b-non" onclick="LireAudio()">Non</button>
+        <button id="b-jsp" onclick="LireAudio()">Je ne sais pas</button>
     </div>
 
 
     <div>
         <label for="texteALire">Entrez votre texte</label>
-        <textarea id="texteALire" maxlength="50">Dadaoui dadaoui</textarea>
+        <textarea id="texteALire" maxlength="50" placeholder="Dadaoui dadaoui"></textarea>
     </div>
     
 

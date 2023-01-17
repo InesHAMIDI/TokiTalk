@@ -3,7 +3,7 @@ body{
     background-color: #1c2541;
 }
 
-.boutons-prefaits{
+#b-oui, #b-non, #b-jsp{
       background-color: #e1ecf4;
       border-radius: 3px;
       border: 1px solid #7aa7c7;
@@ -29,17 +29,17 @@ body{
       white-space: nowrap;
     }
     
-    boutons-prefait:hover,
-    boutons-prefait:focus {
+    #b-oui:hover, #b-non:hover, #b-jsp:hover,
+    #b-oui:focus, #b-non:focus, #b-jsp:focus {
       background-color: #b3d3ea;
       color: #2c5777;
     }
     
-    boutons-prefait:focus {
+    #b-oui:focus, #b-non:focus, #b-jsp:focus {
       box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
     }
     
-    boutons-prefait:active {
+    #b-oui:active, #b-non:active, #b-jsp:active{
       background-color: #a0c7e4;
       box-shadow: none;
       color: #2c5777;
