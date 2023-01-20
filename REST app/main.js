@@ -1,5 +1,8 @@
 "use strict";
-import VoiceRSSWebApi from "./voice-rss-api.js";
+import VoiceRSSWebApi from "../modules/voice-rss-api.js"
+
+let key = "7752ff267a4547ba914bce6d0ff0a23f";
+const VoiceRSS = new VoiceRSSWebApi();
 
 const bvalider = document.getElementById("b-valider");
 bvalider.addEventListener("click", recupererTextEcrit)
@@ -30,9 +33,7 @@ async function lireAudio(text) {
 
 document.addEventListener("load", loadData)
 function loadData() {
-    let key = "7752ff267a4547ba914bce6d0ff0a23f";
-
-    const VoiceRSS = new VoiceRSSWebApi();
+    
     VoiceRSS.setApiKey(key);
     VoiceRSS.setLanguage('fr-fr');
     VoiceRSS.setSpeechRate(0);
