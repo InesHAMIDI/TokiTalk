@@ -1,5 +1,5 @@
 "use strict";
-import VoiceRSSWebApi from "../modules/voice-rss-api.js"
+import {VoiceRSSWebApi} from "voice-rss-api.js"
 
 let key = "7752ff267a4547ba914bce6d0ff0a23f";
 const VoiceRSS = new VoiceRSSWebApi();

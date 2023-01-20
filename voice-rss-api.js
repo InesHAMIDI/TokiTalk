@@ -133,9 +133,9 @@ class VoiceRSSWebApi {
             };
 
             req.open('POST', requestData.url);
-
+            console.log(requestData.contentType)
+            
             if (requestData.contentType) req.setRequestHeader('Content-Type', requestData.contentType);
-
             req.onreadystatechange = () => {
                 if (req.readyState === 4) {
                     let data = null;
