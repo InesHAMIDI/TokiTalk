@@ -28,4 +28,17 @@ module.exports = {
       },
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'InesHAMIDI',
+          name: 'TokiTalk',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
 };
