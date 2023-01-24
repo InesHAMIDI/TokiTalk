@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset= "UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "main.css" rel="stylesheet" type="text/css">
+    <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'"
+  />
+  <meta
+    http-equiv="X-Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'"
+  />
+    <script type="module" src="audio.js"></script>
+    <title>TokiTalk</title>
+</head>
+<header> 
+</header>
+<body>
+    <img class="logo" src="favicon.svg"></img>
+    <div>
+        <button id="b-oui" class="bouton-prefait">Oui</button>
+        <button id="b-non" class="bouton-prefait">Non</button>
+        <button id="b-jsp" class="bouton-prefait">Je ne sais pas</button>
+    </div>
+
+    </div class="textEntree">
+        <label for="texteALire">Entrez votre texte</label>
+        <textarea id="texteALire" maxlength="100" placeholder="Dadaoui dadaoui"></textarea>
+        <button id="b-valider" class="bouton-prefait">Valider</button>
+    </div>
+
+    <p id="info"></p>
+    <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "@electron-forge/publisher-github": "^6.0.4",
+    "electron": "^22.0.3"
+  },
+  "name": "tokitalk",
+  "author": "InesHAMIDI",
+  "version": "1.0.1",
+  "license": "MIT",
+  "description": "a simple app for non verbal folks",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InesHAMIDI/TokiTalk.git"
+  },
+  "keywords": [
+    "app",
+    "javascript",
+    "nonverbal",
+    "texttospeech"
+  ],
+  "bugs": {
+    "url": "https://github.com/InesHAMIDI/TokiTalk/issues"
+  },
+  "homepage": "https://github.com/InesHAMIDI/TokiTalk#readme",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
