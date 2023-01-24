@@ -3,7 +3,6 @@
 <head>
     <meta charset= "UTF-8">
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "icon" href="favicon.svg" type="image/svg">  <!--favicon-->
     <link href= "main.css" rel="stylesheet" type="text/css">
     <meta
     http-equiv="Content-Security-Policy"
@@ -13,11 +12,11 @@
     http-equiv="X-Content-Security-Policy"
     content="default-src 'self'; script-src 'self'"
   />
-
+    <script type="module" src="audio.js"></script>
     <title>TokiTalk</title>
 </head>
 <header>
-    <i class="fa-solid fa-infinity fa-5x" id="logo"></i> 
+    <img class="image" src="favicon.svg"></img> 
 </header>
 <body>
     <div>
@@ -33,9 +32,6 @@
     </div>
 
     <p id="info"></p>
-    <script src="https://kit.fontawesome.com/59ea00ebc4.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <script src="audio.js"></script> <!--le code de tokitalk qui gère l'audio-->
-    <script src="./renderer.js"></script>
+    <script src="renderer.js"></script>
 </body>
 </html>
