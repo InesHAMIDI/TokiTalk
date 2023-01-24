@@ -5,13 +5,12 @@
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "icon" href="favicon.svg" type="image/svg">  <!--favicon-->
     <link href= "main.css" rel="stylesheet" type="text/css">
-    <script type ="module" src="main.js"></script>
     <title>TokiTalk</title>
 </head>
 <header>
     <i class="fa-solid fa-infinity fa-5x" id="logo"></i> 
 </header>
-<body>
+<body onload="loadData()">
     <div>
         <button id="b-oui" class="bouton-prefait">Oui</button>
         <button id="b-non" class="bouton-prefait">Non</button>
@@ -25,5 +24,6 @@
     </div>
 
     <script src="https://kit.fontawesome.com/59ea00ebc4.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>

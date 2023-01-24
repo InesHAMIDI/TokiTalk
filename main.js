@@ -18,26 +18,31 @@ boui.addEventListener("click", lireAudio("oui"))
 bnon.addEventListener("click", lireAudio("non"))
 bjsp.addEventListener("click", lireAudio("je ne sais pas"))
 
-async function lireAudio(text) {
+function lireAudio(text) {
     console.log(text);
-    return fetch("https://api.voicerss.org/?key" + key + "&hl=fr-fr&v=Iva&src=" + text)
-    .then(response =>{
-        if (response.status == 200) {
-           audio => new Audio(audio).play();
-        }
-    })
-    .catch(err =>{
-        if(err.response.status == 400){
-            alert ("bad text");
-            return text;
-        }
-        else{
-            throw err;
-        }
-    })
-    
-    
+
+    var msg = new SpeechSynthesisUtterance();
+    initMsg(msg);
+    msg.text = text;
+    window.speechSynthesis.speak(msg);
+
 }
 
+function loadData(){
+    if ('speechSynthesis' in window) {
+        // Speech Synthesis supported 
+       }else{
+         // Speech Synthesis Not Supported 
+         alert("Sorry, your browser doesn't support text to speech!");
+       }
+}
 
+function initMsg(msg){
+    var voices = window.speechSynthesis.getVoices();
+    msg.voice = voices[10]; 
+    msg.volume = 1; // From 0 to 1
+    msg.rate = 1; // From 0.1 to 10
+    msg.pitch = 1; // From 0 to 2
+    msg.lang = 'fr';
+}
 
