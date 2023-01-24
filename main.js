@@ -1,3 +1,21 @@
+//on crée la fenêtre electron
+const { app, BrowserWindow } = require('electron')
+
+const createWindow = () => {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+  })
+
+  win.loadFile('index.html')
+}
+
+app.whenReady().then(() => {
+  createWindow()
+})
+
+
+//code de TokiTalk
 const bvalider = document.getElementById("b-valider");
 const boui = document.getElementById("b-oui");
 const bnon = document.getElementById("b-non");
