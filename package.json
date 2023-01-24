@@ -10,7 +10,7 @@
   },
   "name": "tokitalk",
   "author": "InesHAMIDI",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "a simple app for non verbal folks",
   "main": "main.js",
