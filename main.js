@@ -1,8 +1,6 @@
 "use strict";
-import VoiceRSSWebApi from "../modules/voice-rss-api.js"
 
 let key = "7752ff267a4547ba914bce6d0ff0a23f";
-const VoiceRSS = new VoiceRSSWebApi();
 
 const bvalider = document.getElementById("b-valider");
 bvalider.addEventListener("click", recupererTextEcrit)
@@ -22,26 +20,24 @@ bjsp.addEventListener("click", lireAudio("je ne sais pas"))
 
 async function lireAudio(text) {
     console.log(text);
-    try {
-        await(VoiceRSS.getAudio(text))
-        audio => new Audio(audio).play()
-    }
-    catch {
-        error => console.log(error);
-    }
+    return fetch("https://api.voicerss.org/?key" + key + "&hl=fr-fr&v=Iva&src=" + text)
+    .then(response =>{
+        if (response.status == 200) {
+           audio => new Audio(audio).play();
+        }
+    })
+    .catch(err =>{
+        if(err.response.status == 400){
+            alert ("bad text");
+            return text;
+        }
+        else{
+            throw err;
+        }
+    })
+    
+    
 }
 
-document.addEventListener("load", loadData)
-function loadData() {
-    
-    VoiceRSS.setApiKey(key);
-    VoiceRSS.setLanguage('fr-fr');
-    VoiceRSS.setSpeechRate(0);
-    VoiceRSS.setAudioCodec('auto');
-    VoiceRSS.setAudioFormat('44khz_16bit_stereo');
-    VoiceRSS.setSSML(false);
-    VoiceRSS.setB64(false);
-    VoiceRSS.setVoice('Iva');
-}
 
 
