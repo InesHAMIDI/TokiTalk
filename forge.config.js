@@ -23,7 +23,7 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        authors: "Ines HAMIDI",
+        authors: 'InesHAMIDI',
         description: 'a simple app for non verbal folks'
       },
     },
